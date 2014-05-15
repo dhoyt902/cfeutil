@@ -161,7 +161,6 @@ if 'clsquery' in form:
     qr = '<span style="font-weight: bold;">Results:</span><br>'
     for i in clsquery:
         qr += '%s<br>' % i
-    HEADER = 'IT WORKED'
     print(TEMPLATE % (HEADER, dyncls, dynclsdrop, qr))
     clslist()
     os.remove('/tmp/classes.cf')
